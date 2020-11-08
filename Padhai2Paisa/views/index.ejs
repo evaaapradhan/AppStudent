@@ -7,5 +7,30 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <a class="btn btn-success" href="/jobs/apply">Apply</a>
+    <hr>
+   
+    <div class ="row">
+      <% jobsList.forEach(function(job) { %>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= job.jobtitles %></h5>
+            <h6 class="card-subtitle mb-2 text-muted"><%= job.vacancyno %></h6>
+            <p class="card-text"><%= job.jobdes%></p>
+            <p class="card-text"><%= job.salary%></p>
+            <p class="card-text"></p><%= job.deadline%></p>
+            <p class="card-text"><%= job.location%></p>
+            <p class="card-text"><%= job.jobcat%></p>
+            <a href=" " class="card-link">Apply</a> -->
+            <!-- <a href=" " class="card-link">Delete</a> --> -->
+
+          </div>
+        </div>
+      <%})%>
+    </div>
+
+
+
   </body>
 </html>
