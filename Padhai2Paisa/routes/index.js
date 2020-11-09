@@ -3,9 +3,21 @@ var router = express.Router();
 const jobs = require('../resources/user');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Padhai2Paisa', jobsList: jobs });
-});
+// router.get('/', function(req, res, next) {
+//   user.find({}, function(err, jobs) {
+//     if (!err) {
+//       res.render('index', { title: 'Padhai2Paisa', jobList: jobs });
+//     } else {
+//       console.log('error', err);
+//     }
+//   })
+//  });
 
-module.exports = router;
+router.get('/', function (req, res, next) {
+  res.render('StudentView', {
+      title: 'Padhai2Paisa', 
+  });
+});
+module.exports = router 
+
 

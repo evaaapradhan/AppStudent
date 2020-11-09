@@ -6,7 +6,7 @@ let jobs = [
         "salary": "negotiable",
         "deadline": "self help",
         "location": "chabahil",
-        " jobcat": "part-time"
+        "jobcat": "part-time"
     },
     {
         "jobtitles": "content writing",
@@ -15,7 +15,7 @@ let jobs = [
         "salary": "per word Rs 1.50",
         "deadline": "self help",
         "location": "chabahil",
-        " jobcat": "part-time"
+        "jobcat": "part-time"
     },
     {
         "jobtitles": "transcribe",
@@ -24,7 +24,7 @@ let jobs = [
         "salary": '1000 per hour',
         "deadline": "self help",
         "location": "boudha",
-        " jobcat": "part-time"
+        "jobcat": "part-time"
     },
     
 ]
