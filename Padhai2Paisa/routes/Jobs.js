@@ -10,4 +10,10 @@ router.get('/apply', function (req, res) {
     });
 });
 
+router.get('/signup', function (req, res) {
+    res.render('Signup', {
+        title: 'signup',
+    });
+});
+
 module.exports = router;
