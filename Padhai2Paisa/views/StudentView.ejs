@@ -3,62 +3,206 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
+<title>Responsive Test</title>
+<style> 
+
 * {box-sizing: border-box;}
 
-/* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+   .wrapper {
+        max-width: 1350px;
+        margin: 0 auto;
+        font: 1.2em Helvetica, arial, sans-serif;
+    }
+
+    .wrapper > * {
+        border: 1px dotted #0096af;
+        background-color: white;
+        border-radius: 1px;
+        padding: 5px;
+    }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 1px;
+}
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+@media (min-width: 500px) {
+  content {
+    grid-column: col-start /span 12;
+    grid-row: 4;
+  }
+  .main-footer {
+    grid-column: col-start 4 / span 9;
+    grid-row: 5;
+  }
+}
+@media (min-width: 700px) {
+  content {
+    grid-column: col-start / span 12;
+    grid-row: 2;
+  }
+  .main-footer {
+    grid-column: col-start / span 12;
+    grid-row: 3;
+  }
 }
 
-/* The popup chat - hidden by default */
-.chat-popup {
+body{
+    background-color: #EFEFEF;
+}
+
+.main-head{
+    background-color: white;
+}
+.logo{
+  margin: 0 auto;
+  float:left;
+  margin-top: 0 auto;
+  cursor: pointer;
+  width: 100px;
+}
+
+h1{
+  font-size: 50px;
+  font-family: 'Roboto Mono', monospace;
+  /*positioning and styling page title*/
+  margin-left: 120px;  
+  margin-top: 10px; 
+  color: #0096af;
+  position: absolute;
+  text-shadow: 1px 2px 1px grey;
+  -webkit-text-stroke: 0.25px black;
+}
+
+h2{
+  font-size: 28px;
+  font-family: 'Roboto Mono', monospace;
+  /*positioning and styling page title*/
+  margin-left: 280px;  
+  margin-top: 65px; 
+  color: #0096af;
+  position: absolute;
+  text-shadow: 1px 0px 1px grey;
+}
+
+#myVideo {
+  object-fit: fill;
+  width: 100%;
+  height: 720px;
+  background-position: center;
+}
+
+.apply-para{
+   font-family: 'Roboto Mono', monospace; 
+}
+
+.btn-apply{
+   margin-left: 580px;
+   position: absolute;
+   top: 160px;
+   color: white;
+   background-color: #0096af;
+}
+
+/* Add some hover effects to buttons */
+.btn-apply:hover{
+  opacity: 1;
+  color: black;
+  background-color: white;
+}
+
+.search{
+   margin-left: 1080px;
+   position: absolute;
+   top: 170px;
+}
+
+/*Form LogButton*/ 
+body {font-family: Playfair Display, Montserrat, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: white;
+  color: white;
+  padding: 10px;
+  border-radius: 60px;
+  position: absolute;
+  top: 750px; 
+  right: 150px;
+}
+
+.open-button:hover{
+  opacity: 1;
+  color: white;
+  background-color: #EFEFEF;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
   display: none;
   position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+  bottom: 5px;
+  right: 5px;
 }
 
 /* Add styles to the form container */
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: white;
+  background-color: #C1CDD4;
+  border: 2px dashed #556374;
 }
 
-/* Full-width textarea */
-.form-container textarea {
+/* Full-width input fields */
+.form-container input[type=text]{
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
-  resize: none;
-  min-height: 200px;
 }
 
-/* When the textarea gets focus, do something */
-.form-container textarea:focus {
+.form-container input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=msg]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=tel]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus,.form-container input[type=tel]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-/* Set a style for the submit/send button */
+/* Set a style for the login button */
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: #3D3333;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -70,93 +214,283 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #F82F2F;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-</style>
+
+.hire-para{
+    position: absolute;
+    top: 730px; 
+    right: 400px;
+    background-color: #EFEFEF;
+    opacity: 1;
+}
+
+.hire-para:hover{
+    color: black; 
+    background-color: white;
+}
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+
+@media (min-width:500px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+</style> 
 <body>
-<header>
-    <div class="top_header">
-    <div class="logo">
-  	  <img src="images/logo.png" alt="logo.png">
-    </div>
-    <div class="top_left">
-       <h3>Padhai2Paisa</h3>
-    </div>
-    </div>
-</header>
-<div class="main_container">
-  <div class="search-container">
-    <form method = "post" action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-  <!-- <div class="apply_container">  -->
-   
-    <!-- <button type="button" onclick="alert('jobposted page')" -->
+<div class="wrapper">
+        <header class="main-head">
+            <a href="StudentView.ejs">
+                <img src="logoRS2.png" alt="company logo" class="logo">
+            </a>
+            <h1>
+                Padhai 2 Paisa
+            </h1>  
+            <h2>
+                Your own Beginning
+            </h2>    
+        </header>
+        <article class="content">
+            <div class="main">
+                  <video autoplay muted loop id="myVideo" poster="bg-video.jpg">
+                  <source src="bg-video.mp4" type="video/mp4">
+                </video>
+                <div class = "search">
+                    <form method = "post" action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search" style="font-size: 18px;">
+                        <button type="submit"><i class="fa fa-search" style="font-size: 20px;"></i></button> 
+                    </form>
+                </div>   
+                <p class="apply-para">
+                    <span style="position:absolute; font-size:30px; margin-left: 610px; top:170px">Why wait?</span><br>
+                    <span style="position:absolute; font-size:26px; margin-left: 450px; top:220px">When you can create your own future!<span>
+                </p> 
+                <button class="btn-apply" href="/jobs/apply" style=" font-size: 30px; margin-top: 400px; border-radius: 60px;">APPLY NOW</button> 
+                <p class="hire-para" style="font-size: 25px;">
+                    Want to ensure a better future? Hire young professionals here!
+                </p>
+             
+             <button class="open-button" onclick="openForm()"><img src="chatlogo6.png" alt="chat logo here"></button>
+             <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <p style="font-size: 20px; text-align: center;"><b>Message Box</b></p>
+            
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" id="name" placeholder="Enter Name" name="username" required>    
 
-  <!-- </div> -->
-  <a class="btn btn-success" href="/jobs/apply">APPLY NOW!!</a>
-    <!-- <button type="submit" class="btn btn-primary" name="action" href="/jobs/apply">Apply</button> -->
- 
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" id="email" pattern="@" placeholder="Enter Email" name="email" required>
 
-  <div class="chat-popup" id="myForm">
-  <form method = "post" action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
+                    <label for="msg"><b>Message</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
+              
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+          </div>  
+      </aside>
+       </article> 
+        <footer class="main-footer">
+            <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  
+              to help the upcoming programmers with the code. Scanfcode focuses on providing the most
+              efficient code or snippets as the code wants to be simple. We will help programmers build up
+              concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, 
+              JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Scanfcode</a>.
+            </p>
+          </div>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-<button class="open-button" onclick="openForm()">Chat</button>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>  
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
 
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
-
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
-
-</div>
-</body>
-<footer>
-
-  <div class="footer_bar">
-    <div class="Aboutus">
-      <h1>About us</h1>
-      <p>padhai 2 paisa...part time job for students. nkbfjshbkfs bjhbsdj jbks jbhkfa jhbba hbkhaj jhbkwkjbb jrbj</p>
-    </div>
-
-    <div class="footer-social">
-<a href="#" target="_blank" ><i class="fa fa-facebook"></i></a>
-<a href="#" target="_blank" ><i class="fa fa-instagram"></i></a>
-</div>
-  </div>
-<div class="Copyright">
-    <p> <span> © Copyright <a href="#" target="_blank">Padhai2Paisa</a> 2020 | </span> Designed & Developed by <a href="#" target="_blank">Students</a>  </p>
-</div>
-</footer>
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+ </body>
 </html>
