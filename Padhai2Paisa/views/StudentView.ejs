@@ -235,163 +235,103 @@ body {font-family: Playfair Display, Montserrat, sans-serif;}
     background-color: white;
 }
 
+
 .site-footer
 {
-  background-color:#26272b;
+  background-color:white;
   padding:45px 0 20px;
-  font-size:15px;
+  font-size:18px;
   line-height:24px;
-  color:#737373;
+  color:#0096af;
 }
+
 .site-footer hr
 {
-  border-top-color:#bbb;
-  opacity:0.5
+  border-top-color:white;
 }
-.site-footer hr.small
-{
-  margin:20px 0
-}
+
 .site-footer h6
 {
-  color:#fff;
+  color:#0096af;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
-  letter-spacing:2px
+  margin-left: 20px;
+  letter-spacing: 1px;
 }
+
 .site-footer a
 {
-  color:#737373;
+  color:#737373;/*change this*/
 }
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
+
 .site-footer .social-icons a
 {
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#33353d;
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
 }
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
+
+.site-footer
+{
+   padding-bottom:0;
+}
+
+.site-footer .copyright-text,.site-footer .social-icons
+{
+   text-align:center;
+}
+
 .social-icons
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  position: absolute;
+  top: 1035px;
+  left: 750px;
 }
 .social-icons li
 {
-  display:inline-block;
   margin-bottom:4px
 }
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
+
 .social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
+  background-color:#EFEFEF;
+  color:white;
   font-size:16px;
   display:inline-block;
   line-height:44px;
   width:44px;
   height:44px;
   text-align:center;
-  margin-right:8px;
+  margin-bottom: 8px;
   border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
 }
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
+
 .social-icons a.facebook:hover
 {
-  background-color:#3b5998
+  background-color:#0096af;
 }
 .social-icons a.twitter:hover
 {
-  background-color:#00aced
+  background-color:#0096af;
 }
 .social-icons a.linkedin:hover
 {
-  background-color:#007bb6
+  background-color:#0096af;
 }
 
-@media (min-width:500px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
 
 </style> 
 <body>
 <div class="wrapper">
         <header class="main-head">
             <a href="StudentView.ejs">
-                <img src="logoRS2.png" alt="company logo" class="logo">
+                <img src="../images/logoRS2.png" alt="company logo" class="logo">
             </a>
             <h1>
                 Padhai 2 Paisa
@@ -431,7 +371,7 @@ body {font-family: Playfair Display, Montserrat, sans-serif;}
                     Want to ensure a better future? Hire young professionals here!
                 </p>
              
-             <button class="open-button" onclick="openForm()"><img src="chatlogo6.png" alt="chat logo here"></button>
+             <button class="open-button" onclick="openForm()"><img src="../images/chatlogo6.png" alt="chat logo here"></button>
              <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
                     <p style="font-size: 20px; text-align: center;"><b>Message Box</b></p>
@@ -452,47 +392,37 @@ body {font-family: Playfair Display, Montserrat, sans-serif;}
           </div>  
       </aside>
        </article> 
-        <footer class="main-footer">
-            <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  
-              to help the upcoming programmers with the code. Scanfcode focuses on providing the most
-              efficient code or snippets as the code wants to be simple. We will help programmers build up
-              concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, 
-              JavaScript, PHP, Android, SQL and Algorithm.</p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr>
+       <footer class="main-footer">
+        <!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6><i>About</i></h6>
+        <p class="text-justify" style="margin-left: 20px; margin-right: 800px;">Padhai2Paisa <i>Your Own Beginning</i>.
+          Are you a student trying to find an internship or get started with a part-time job meanwhile you study? If this is you, welcome on board! Here at Padhai2Paisa, we are providing you the perfect platform to get started for your big break. Whether it be internship in your own field of study or a side job for extra pocketmoney, we have got you covered. We bring you the most recent job lisitngs directly from companies looking to hire young professionals like <u> you</u>.
+          </p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
-            </p>
-          </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
-        </div>
+      <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+      </ul>
+     
+    </div>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by Our_Group
+        </p>
       </div>
+        
+    </div>
+  </div>
 </footer>  
     <script>
         function openForm() {
