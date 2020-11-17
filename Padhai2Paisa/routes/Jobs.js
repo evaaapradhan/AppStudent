@@ -4,15 +4,15 @@ var jobs = require('../resources/user');
 //let Jobs = require('../models/user');
 
 
-router.get('/apply', function (req, res) {
-    res.render('index', {
-        title: 'Apply', jobsList: jobs,
+router.get('/register', function (req, res) {
+    res.render('Signup', {
+        title: 'SignUpCompany', jobsList: jobs,
     });
 });
 
-router.get('/signup', function (req, res) {
-    res.render('Signup', {
-        title: 'signup',
+router.get('/postjobs', function (req, res) {
+    res.render('Postform', {
+        title: 'postform',
     });
 });
 
