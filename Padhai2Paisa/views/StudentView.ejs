@@ -1,507 +1,747 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="author" content="studentapp_team">
+<meta name="description" content="Find job for students">
+<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Padhai2Paisa</title>
+<link rel = "icon" href = "images/logoRS2.png" type = "image/x-icon"> 
+
+<script src="cdn-cgi/apps/head/4n2NXumNjtg5LPp6VXLlDicTUfA.js"></script><link rel="apple-touch-icon" href="images/apple-touch-icon.html">
+<link rel="shortcut icon" type="image/ico" href="images/favicon.html" />
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="css/matrialize.css" rel="stylesheet">
+
+<link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
 </head>
-<title>Responsive Test</title>
-<style> 
-
-* {box-sizing: border-box;}
-
-   .wrapper {
-        max-width: 1350px;
-        margin: 0 auto;
-        font: 1.2em Helvetica, arial, sans-serif;
-    }
-
-    .wrapper > * {
-        border: 1px dotted #0096af;
-        background-color: white;
-        border-radius: 1px;
-        padding: 5px;
-    }
-
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 1px;
-}
-.wrapper > * {
-  grid-column: col-start / span 12;
-}
-@media (min-width: 500px) {
-  content {
-    grid-column: col-start /span 12;
-    grid-row: 4;
-  }
-  .main-footer {
-    grid-column: col-start 4 / span 9;
-    grid-row: 5;
-  }
-}
-@media (min-width: 700px) {
-  content {
-    grid-column: col-start / span 12;
-    grid-row: 2;
-  }
-  .main-footer {
-    grid-column: col-start / span 12;
-    grid-row: 3;
-  }
-}
-
-body{
-    background-color: #EFEFEF;
-}
-
-.main-head{
-    background-color: white;
-}
-.logo{
-  margin: 0 auto;
-  float:left;
-  margin-top: 0 auto;
-  cursor: pointer;
-  width: 100px;
-}
-
-h1{
-  font-size: 50px;
-  font-family: 'Roboto Mono', monospace;
-  /*positioning and styling page title*/
-  margin-left: 120px;  
-  margin-top: 10px; 
-  color: #0096af;
-  position: absolute;
-  text-shadow: 1px 2px 1px grey;
-  -webkit-text-stroke: 0.25px black;
-}
-
-h2{
-  font-size: 28px;
-  font-family: 'Roboto Mono', monospace;
-  /*positioning and styling page title*/
-  margin-left: 280px;  
-  margin-top: 65px; 
-  color: #0096af;
-  position: absolute;
-  text-shadow: 1px 0px 1px grey;
-}
-
-#myVideo {
-  object-fit: fill;
-  width: 100%;
-  height: 720px;
-  background-position: center;
-}
-
-.apply-para{
-   font-family: 'Roboto Mono', monospace; 
-}
-
-.btn-apply{
-   margin-left: 580px;
-   position: absolute;
-   top: 160px;
-   color: white;
-   background-color: #0096af;
-}
-
-/* Add some hover effects to buttons */
-.btn-apply:hover{
-  opacity: 1;
-  color: black;
-  background-color: white;
-}
-
-.search{
-   margin-left: 1080px;
-   position: absolute;
-   top: 170px;
-}
-
-/*Form LogButton*/ 
-body {font-family: Playfair Display, Montserrat, sans-serif;}
-* {box-sizing: border-box;}
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: white;
-  color: white;
-  padding: 10px;
-  border-radius: 60px;
-  position: absolute;
-  top: 750px; 
-  right: 150px;
-}
-
-.open-button:hover{
-  opacity: 1;
-  color: white;
-  background-color: #EFEFEF;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-}
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: #C1CDD4;
-  border: 2px dashed #556374;
-}
-
-/* Full-width input fields */
-.form-container input[type=text]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-container input[type=email]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-container input[type=msg]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-.form-container input[type=tel]{
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus, .form-container input[type=password]:focus,.form-container input[type=tel]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the login button */
-.form-container .btn {
-  background-color: #3D3333;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: #F82F2F;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
-.hire-para{
-    position: absolute;
-    top: 730px; 
-    right: 400px;
-    background-color: #EFEFEF;
-    opacity: 1;
-}
-
-.hire-para:hover{
-    color: black; 
-    background-color: white;
-}
-
-.site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
-}
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links
-{
-  padding-left:0;
-  list-style:none
-}
-.footer-links li
-{
-  display:block
-}
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
-}
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-.social-icons
-{
-  padding-left:0;
-  margin-bottom:0;
-  list-style:none
-}
-.social-icons li
-{
-  display:inline-block;
-  margin-bottom:4px
-}
-.social-icons li.title
-{
-  margin-right:15px;
-  text-transform:uppercase;
-  color:#96a2b2;
-  font-weight:700;
-  font-size:13px
-}
-.social-icons a{
-  background-color:#eceeef;
-  color:#818a91;
-  font-size:16px;
-  display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
-  text-align:center;
-  margin-right:8px;
-  border-radius:100%;
-  -webkit-transition:all .2s linear;
-  -o-transition:all .2s linear;
-  transition:all .2s linear
-}
-.social-icons a:active,.social-icons a:focus,.social-icons a:hover
-{
-  color:#fff;
-  background-color:#29aafe
-}
-.social-icons.size-sm a
-{
-  line-height:34px;
-  height:34px;
-  width:34px;
-  font-size:14px
-}
-.social-icons a.facebook:hover
-{
-  background-color:#3b5998
-}
-.social-icons a.twitter:hover
-{
-  background-color:#00aced
-}
-.social-icons a.linkedin:hover
-{
-  background-color:#007bb6
-}
-
-@media (min-width:500px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
-
-</style> 
 <body>
-<div class="wrapper">
-        <header class="main-head">
-            <a href="StudentView.ejs">
-                <img src="logoRS2.png" alt="company logo" class="logo">
-            </a>
-            <h1>
-                Padhai 2 Paisa
-            </h1>  
-            <h2>
-                Your own Beginning
-            </h2>    
-        </header>
-        <article class="content">
-            <div class="main">
-                  <video autoplay muted loop id="myVideo" poster="bg-video.jpg">
-                  <source src="../images/bg-video.mp4" type="video/mp4">
-                </video>
-                <div class = "search">
-                    <form method = "post" action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search" style="font-size: 18px;">
-                        <button type="submit"><i class="fa fa-search" style="font-size: 20px;"></i></button> 
-                    </form>
-                </div>   
-                <p class="apply-para">
-                    <span style="position:absolute; font-size:30px; margin-left: 610px; top:170px">Why wait?</span><br>
-                    <span style="position:absolute; font-size:26px; margin-left: 450px; top:220px">When you can create your own future!<span>
-                </p> 
-                <form method ="get" action="/jobs/apply">
-                <button type = "submit" class="btn-apply" href="/jobs/apply" style=" font-size: 30px; margin-top: 400px; border-radius: 60px;">APPLY NOW</button> 
-                </form>
 
-                <div class="signup_container">
-                  <form method ="get" action="/jobs/signup">
-                    <button type = "submit" class="btn-apply" href="/jobs/signup" >Signup/Register</button> 
-                    </form>
+<header class="header">
 
-                 </div>
-                
+<div class="top_bar background-color-orange" style="background-color: #007C94;">
+<div class="top_bar_container">
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
+<ul class="top_bar_contact_list">
+<li>
+<i class="fa fa-phone coll" aria-hidden="true"></i>
+<div class="contact-no">0123 4567 8912</div>
+</li>
+<li>
+<i class="fa fa-envelope coll" aria-hidden="true"></i>
+<div class="email">studentapp@gmail.com</div> 
+</li>
+</ul>
+<div class=" ml-auto ">
 
-                <p class="hire-para" style="font-size: 25px;">
-                    Want to ensure a better future? Hire young professionals here!
-                </p>
-             
-             <button class="open-button" onclick="openForm()"><img src="chatlogo6.png" alt="chat logo here"></button>
-             <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                    <p style="font-size: 20px; text-align: center;"><b>Message Box</b></p>
-            
-                    <label for="name"><b>Name</b></label>
-                    <input type="text" id="name" placeholder="Enter Name" name="username" required>    
+<div class="hamburger menu_mm  search_button transparent search display"><i class="large material-icons font-color-white  search-icone  menu_mm ">menu</i></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" id="email" pattern="@" placeholder="Enter Email" name="email" required>
+<div class="header_container background-color-orange-light" style="background-color: #0096AF;"> 
+<div class="container">
+<div class="row">
+<div class="col">
+<div class="header_content d-flex flex-row align-items-center justify-content-start">
+<div class="logo_container">
+<a href="index-2.html">
+<img src="images/logoRS2.png" class="logo-text" alt="graduate cap with rupees on top" style="height: 65px; width: 70px;">
+</a>
+</div>
+<nav class="main_nav_contaner ml-auto">
+<ul class="main_nav">
+<li>
+<a href="index-2.html">Home</a>
+</li>
+<li class="dropdown ">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">Job
+<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="job_category.html">Job List</a></li>
+<li><a href="job_detail.html">Job Detail</a></li>
+</ul>
+</li>
+<li><a href="blog_page.html"> Blog</a></li>
+<li><a href="about_us.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<div class=" Post-Jobs">
+<a href="post_job.html" class="">
+Post Jobs
+</a>
+</div>
+<div class="hamburger menu_mm menu-vertical">
+<i class="large material-icons font-color-white menu_mm menu-vertical">menu</i>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-                    <label for="msg"><b>Message</b></label>
-                    <textarea placeholder="Type message.." name="msg" required></textarea>
-              
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-            </div>
-          </div>  
-      </aside>
-       </article> 
-        <footer class="main-footer">
-            <!-- Site footer -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  
-              to help the upcoming programmers with the code. Scanfcode focuses on providing the most
-              efficient code or snippets as the code wants to be simple. We will help programmers build up
-              concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, 
-              JavaScript, PHP, Android, SQL and Algorithm.</p>
-          </div>
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+<div class="menu_close_container">
+<div class="menu_close">
+<div></div>
+<div></div>
+</div>
+</div>
+<div class="search">
+<form action="#" class="header_search_form menu_mm">
+<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
+<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+<i class="fa fa-search menu_mm" aria-hidden="true"></i>
+</button>
+</form>
+</div>
+<nav class="menu_nav">
+<ul class="menu_mm">
+<li class="menu_mm">
+<a href="index-2.html">Home</a>
+</ul>
+</li>
+<li class="dropdown menu_mm">
+<a class="dropdown-toggle menu_mm" data-toggle="dropdown" href="#">Job
+<span class="caret"></span></a>
+<ul class="dropdown-menu menu_mm">
+<li class="menu_mm" ><a href="job_category.html">Job List</a></li>
+<li class="menu_mm"><a href="job_detail.html">Job Detail</a></li>
+</ul>
+</li>
+<li class="menu_mm"><a href="blog_page.html">Blog</a></li>
+<li class="menu_mm"><a href="about_us.html">About</a></li>
+<li class="menu_mm"><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-          <div class="col-xs-6 col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <hr>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-         <a href="#">Scanfcode</a>.
-            </p>
-          </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-            </ul>
-          </div>
-        </div>
-      </div>
-</footer>  
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
+<section id="intro">
+<div class="carousel-item active">
+<div class="carousel-background"></div>
+<div class="carousel-container">
+	<video autoplay muted loop id="myVideo" poster="bg-video.jpg" style="z-index: -1; position: absolute; height: 850px; overflow: hidden;">
+    <source src="images/bg-video.mp4" type="video/mp4">
+    </video>
+<div class="carousel-content">
+<h2 class="font-color-white">Find Jobs Now more Easy Way</h2>
+<p class="font-color-white">Lorem ipsum tempus amet conubia adipiscing fermentum viverra gravida, mollis suspendisse pretium dictumst inceptos mattis euismod lorem nulla, magna duis nostra sodales luctus nulla praesent fermentum a elit mollis purus aenean curabitur eleifend </p>
 
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
+</div>
+</div>
+</div>
+</section>
+
+
+<div id="search-box">
+<div class="container search-box">
+<form action="#" id="search-box_search_form_3" class="search-box_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between ">
+<div class="d-flex flex-row align-items-center justify-content-start inline-block">
+<span class="large material-icons search">search</span>
+<input class="search-box_search_input" placeholder="Search Keyword" required="required" type="search">
+<select class="dropdown_item_select search-box_search_input">
+<option>Category</option>
+<option>Category1</option>
+<option>Category2</option>
+</select>
+<span class="large material-icons search">place</span>
+<input class="search-box_search_input " placeholder="Location" required="required" type="search">
+</div>
+<button type="submit" class="search-box_search_button" style="background-color: #0096AF">Search Jobs</button>
+</form>
+</div>
+</div>
+
+
+<section id="Job-Category">
+<div class="container">
+<h3 class="text-center">Choose Job Category</h3>
+<div class="vertical-space-30"></div>
+<p class="max-width">Lorem ipsum tempus amet conubia adipiscing fermentum viverra gravida, mollis suspendisse pretium dictumst inceptos mattis euismod
+</p>
+<div class="vertical-space-60"> </div>
+<div class="row">
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-1.png" alt="">
+</div>
+<h6>Education & Training</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>36 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-2.png" alt="">
+</div>
+<h6>Sales and Marketing</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>72 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-3.png" alt="">
+</div>
+<h6>Computer Programing</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>42 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-4.png" alt="">
+</div>
+<h6>Customer Support</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>18 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-5.png" alt="">
+</div>
+<h6>Design & Multimedia</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>48 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-6.png" alt="">
+</div>
+<h6>Web Development</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>94 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50 margin-left-18">
+<div class="box background-color-white-light">
+<div class="circle">
+<img src="imags/icone/service-icone-7.png" alt="">
+</div>
+<h6>Medical/Pharma</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>64 Job Posts</span></a>
+</div>
+</div>
+<div class="col-lg-3 col-md-6 max-width-50">
+<div class="box background-color-white-light ">
+<div class="circle">
+<img src="imags/icone/service-icone-8.png" alt="">
+</div>
+<h6>Engineer/Architects</h6>
+<a href="#" class="button job_post" data-hover="View Jobs" data-active="I'M ACTIVE"><span>52 Job Posts</span></a>
+</div>
+</div>
+</div>
+<div class="vertical-space-40"></div>
+<a href="#" class="Brows-All-Category">Browse All Category</a>
+</div>
+<div class="vertical-space-85"></div>
+</section>
+
+
+<section id="resent-job-post" class="background-color-white">
+<div class="vertical-space-85"></div>
+<div class="container text-center">
+<h3 class="text-center">Recent Job Post</h3>
+<div class="vertical-space-30"></div>
+<p class="max-width">Lorem ipsum tempus amet conubia adipiscing fermentum viverra gravida, mollis suspendisse pretium dictumst inceptos mattis euismod
+</p>
+<div class="vertical-space-60"></div>
+<div class="detail">
+<div class="media display-inline text-align-center">
+<img src="imags/job-post-icone-1.png" alt="John Doe" class="mr-3 ">
+<div class="media-body text-left  text-align-center">
+<h6>Jopitar looking for a senior UX Designer</h6>
+<i class="large material-icons">account_balance</i>
+<span class="text">Jopitar inc.</span>
+<br />
+<i class="large material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<div class="float-right margin-top text-align-center">
+<a href="#" class="part-full-time">Part Time</a>
+<p class="date-time">Deadline: May 23, 2018</p>
+</div>
+</div>
+</div>
+</div>
+<div class="detail">
+<div class="media display-inline text-align-center">
+<img src="imags/job-post-icone-2.png" alt="John Doe" class="mr-3 ">
+<div class="media-body text-left text-align-center">
+<h6>Rokital needs Marketing Experts</h6>
+<i class="large material-icons">account_balance</i>
+<span class="text">Rokitar ltd.</span>
+<br />
+<i class="large material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<div class="float-right margin-top text-align-center">
+<a href="#" class="part-full-time">Full Time</a>
+<p class="date-time">Deadline: May 23, 2018</p>
+</div>
+</div>
+</div>
+</div>
+<div class="detail">
+<div class="media display-inline text-align-center">
+<img src="imags/job-post-icone-3.png" alt="John Doe" class="mr-3 ">
+<div class="media-body text-left text-align-center">
+<h6>Mshape looking for a senior UX Designer</h6>
+<i class="large material-icons">account_balance</i>
+<span class="text">Mshape inc.</span>
+<br />
+<i class="large material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<div class="float-right margin-top text-align-center">
+<a href="#" class="part-full-time">Full Time</a>
+<p class="date-time">Deadline: May 23, 2018</p>
+</div>
+</div>
+</div>
+</div>
+<div class="detail">
+<div class="media display-inline text-align-center">
+<img src="imags/job-post-icone-4.png" alt="John Doe" class="mr-3 ">
+<div class="media-body text-left text-align-center">
+<h6>Marketing Directer needed</h6>
+<i class="large material-icons">account_balance</i>
+<span class="text">Scalegoss ltd.</span>
+<br />
+<i class="large material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<div class="float-right margin-top text-align-center">
+<a href="#" class="part-full-time">Part Time</a>
+<p class="date-time">Deadline: May 23, 2018</p>
+</div>
+</div>
+</div>
+</div>
+<div class="detail">
+<div class="media display-inline text-align-center">
+<img src="imags/job-post-icone-5.png" alt="John Doe" class="mr-3 ">
+<div class="media-body text-left text-align-center">
+<h6>We need a senior Brand Designer</h6>
+<i class="large material-icons">account_balance</i>
+<span class="text">Supwin inc.</span>
+<br />
+<i class="large material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<div class="float-right margin-top text-align-center">
+<a href="#" class="part-full-time">Freelance</a>
+<p class="date-time">Deadline: May 23, 2018</p>
+</div>
+</div>
+</div>
+</div>
+<div class="vertical-space-20"></div>
+<div class="job-list">
+<a href="#" class="Open-Jobs-Page margin-auto" style="background-color: #0096AF">Open Jobs Page<i class="large material-icons float-right">trending_flat</i></a>
+<ul class="pagination justify-content-end margin-auto">
+<li class="page-item"><a class="page-link pdding-none" href="javascript:void(0);"><i class=" material-icons keyboard_arrow_left_right">keyboard_arrow_left</i></a></li>
+<li class="page-item"><a class="page-link active" href="javascript:void(0);">1</a></li>
+<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+<li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+<li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+<li class="page-item">
+<a class="page-link pdding-none" href="javascript:void(0);"> <i class=" material-icons keyboard_arrow_left_right">keyboard_arrow_right</i></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="vertical-space-60"></div>
+</section>
+
+
+<section id="Featuread-Company">
+<div class="vertical-space-85"></div>
+<div class="container text-center">
+<h3 class="text-center">Featured Company</h3>
+<div class="vertical-space-30"></div>
+<p class="max-width">Lorem ipsum tempus amet conubia adipiscing fermentum viverra gravida, mollis suspendisse pretium dictumst inceptos mattis euismod
+</p>
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-md-12">
+<div class="owl-carousel Featuread-Company-carousel">
+<a href="#" class="Featuread-Company-item">
+<div class="media text-align-center  media1">
+<img src="imags/job-post-icone-3.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center ">
+<h6>Mshape Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Mshape inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+<img src="imags/job-post-icone-4.png" alt="John Doe" class="margin-auto Featuread-Company-img">
+<div class="media-body text-left text-align-center">
+<h6>Scalegoss Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Scalegoss inc.</span>
+ <br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media text-align-center   media1">
+<img src="imags/job-post-icone-1.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Jopitar Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Jopitar inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media   text-align-center media1">
+<img src="imags/job-post-icone-5.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Supwin Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Supwin inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media text-align-center   media1">
+<img src="imags/job-post-icone-3.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Mshape Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Mshape inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+ <img src="imags/job-post-icone-4.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Scalegoss Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Scalegoss inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+<img src="imags/job-post-icone-3.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Mshape Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Mshape inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+<img src="imags/job-post-icone-4.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Scalegoss Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Scalegoss inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+<img src="imags/job-post-icone-1.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Jopitar Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Jopitar inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+ <br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+<img src="imags/job-post-icone-5.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Supwin Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Supwin inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+<a href="#" class="Featuread-Company-item">
+<div class="media  text-align-center  media1">
+<img src="imags/job-post-icone-3.png" alt="John Doe" class=" Featuread-Company-img margin-auto">
+<div class="media-body text-left text-align-center">
+<h6>Mshape Themes Limited.</h6>
+<i class="material-icons">account_balance</i>
+<span class="text">Mshape inc.</span>
+<br />
+<i class=" material-icons">place</i>
+<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<br />
+<i class=" material-icons">person</i>
+<span class="text font-size font-color-orange">3 Open Position</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="vertical-space-85"></div>
+</div>
+</section>
+
+
+<section id="Jobtend">
+<div class="container">
+<div class="vertical-space-85"></div>
+<div class="row">
+<div class="col-lg-9 col-md-6  align-self-center">
+<h3 class="title">Jobtend - Best Place to Find Jobs & Employee</h3>
+<div class="vertical-space-30"></div>
+<p class="max-width">Lorem ipsum tempus amet conubia adipiscing fermentum viverra gravida, mollis suspendisse pretium dictumst inceptos mattis euismod lorem nulla magna duis nostra sodales luctus nulla
+</p>
+<div class="vertical-space-30"></div>
+<h4>Why we are best</h4>
+<div class="vertical-space-30"></div>
+<ul>
+<li class="list-item1 ">Et vestibulum ullamcorper curae tellus consectetur erat pharetra et cubilia
+<br /> Nibh est auctor lacus nam lacinia aptent
+</li>
+<li class="list-item1 ">Vitae sociosqu a nisi cubilia vulputate aliquam vulputate imperdiet tempor arcu fames</li>
+<li class="list-item1 ">Odio habitasse senectus morbi dapibus mauris non primis, nisl ante hendrerit consectetur nulla phasellus eleifend, ad at scelerisque vulputate habitant tempor</li>
+</ul>
+<div class="vertical-space-30"></div>
+<a href="#" class="Explore-Employee" style="background-color: #0096AF">Explore Employee</a>
+<a href="#" class="Explore-New-Jobs">Explore New Jobs</a>
+</div>
+<div class="col-lg-3 col-md-6">
+<img src="imags/man.png" alt="" class="man-img">
+</div>
+<div class="vertical-space-60"></div>
+</div>
+</div>
+</section>
+
+
+<section id="Clients-Testimonial">
+<div class="vertical-space-85"></div>
+<div class="container">
+<h3 class="text-center">User Review</h3>
+<div class="vertical-space-30"></div>
+<p class="max-width">Lorem ipsum tempus amet conubia adipiscing fermentum viverra gravida, mollis suspendisse pretium dictumst inceptos mattis euismod
+</p>
+<div class="vertical-space-60"></div>
+<div class="col-xs-12 col-sm-12 col-md-12">
+<div class="owl-carousel Clients-Testimonial-carousel">
+<div class="Clients-Testimonial-item">
+<div class="testimonial" style="background-color: #5ECCE7;">
+<h3 class="testimonial-title" style="color: black;">Farhana Islam</h3>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<p class="description" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula turpis non est imperdiet, et facilisis nisl tempus. Donec nec. </p>
+<div class="pic">
+<img src="imags/Clients-Testimonial1.jpg" alt="">
+</div>
+</div>
+</div>
+<div class="Clients-Testimonial-item">
+<div class="testimonial" style="background-color: #5ECCE7;">
+<h3 class="testimonial-title" style="color: black;">Williamson</h3>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<p class="description" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula turpis non est imperdiet, et facilisis nisl tempus. Donec nec. </p>
+<div class="pic">
+<img src="imags/Clients-Testimonial3.jpg" alt="">
+</div>
+</div>
+</div>
+<div class="Clients-Testimonial-item">
+<div class="testimonial" style="background-color: #5ECCE7;">
+<h3 class="testimonial-title">Williamson</h3>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<i class="material-icons star">star</i>
+<p class="description" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula turpis non est imperdiet, et facilisis nisl tempus. Donec nec. </p>
+<div class="pic"> 
+<img src="imags/Clients-Testimonial2.jpg" alt="">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="vertical-space-85"></div>
+</div>
+</section>
+
+
+<footer id="footer" class="background-color-white">
+<div class="container">
+<div class="vertical-space-100"></div>
+<div class="row">
+<div class="col-lg-4 col-md-6 vertical-space-2">
+<h5>About Us</h5>
+<p class="paregraf"> Are you a student trying to find an internship or get started with a part-time job meanwhile you study? We are providing you the perfect platform to get job listings from companies looking to hire young professionals like <u> you</u>.</p>
+<a href="#">
+<i class="fa fa-facebook social-icon"></i></a>
+<a href="#">
+<i class="fa fa-twitter social-icon"></i></a>
+<a href="#">
+<i class="fa fa-map-marker social-icon"></i></a>
+</div>
+<div class="col-lg-2 col-md-6 vertical-space-2">
+<h5>See More</h5>
+<div class="text">
+<a href="#">About Us</a>
+<a href="#">Contact</a>
+<a href="#">Terms</a>
+<a href="#">Privacy</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 vertical-space-2">
+<h5>Follow Us</h5>
+<p>Get latest blogs and newsletter</p>
+<div class="vertical-space-30"></div>
+<form>
+<input type="email" class="email " placeholder="Email Address " required="">
+<span class="fa fa-envelope email-icone "></span>
+<input type="submit" class="Subscribe" value="Subscribe" style="background-color:#0096AF;">
+</form>
+</div>
+</div>
+<div class="vertical-space-60"></div>
+</div>
+<div class="container-fluid background-color-orange main-footer" style="background-color:#0096AF; ">
+<div class="container text-center">
+<div class="vertical-space-30"></div>
+<p><a target="_blank" style="color: white; font-size: 15px;">2020 Copyright &copy; studentapp_team </a></p>
+</div>
+</div>
+</footer>
+
+
+<div class="modal" id="myModal">
+<div class="container">
+<div class="vertical-space-85"></div>
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-body">
+<button class="button button-rounded  close" data-dismiss="modal">&times;</button>
+<video class="" controls>
+<source src="video/Pexels_Videos_2706.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script src="js/custom.js"></script>
+<script>
+        $(".search-icone").click(function(){
+     // $(".menu").animate({height: "100vh"});
+});
+
     </script>
- </body>
+</body>
+
 </html>
+
+
+
+
+
+
+
+
+
