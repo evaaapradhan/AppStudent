@@ -32,4 +32,11 @@ router.post('/save', function(req, res, next) {
     })
  });
 
+ router.get('/blog', function (req, res) {
+    res.render('blog', {
+        title: 'blogpage',
+        
+    });
+});
+
 module.exports = router;
