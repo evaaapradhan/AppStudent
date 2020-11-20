@@ -5,14 +5,15 @@ let Jobs = require('../models/user');
 
 /* GET home page. */
 // router.get('/', function(req, res, next) {
-//   user.find({}, function(err, jobs) {
+//   Jobs.find({}, function(err, jobs) {
 //     if (!err) {
-//       res.render('index', { title: 'Padhai2Paisa', jobList: jobs });
+//       res.render('jobslist', { title: 'Padhai2Paisa', jobList: jobs });
 //     } else {
 //       console.log('error', err);
 //     }
 //   })
 //  });
+
 
 router.get('/', function (req, res, next) {
   res.render('StudentView', {
