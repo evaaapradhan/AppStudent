@@ -189,27 +189,31 @@
                         </div>
                     </div>
                 </div>
+            
                 <div class="col-lg-8 col-md-12">
+                    <% jobList.forEach(function(job,i) { %>
                     <div class="detail width-100 ">
                         <div class="media display-inline text-align-center">
                             <img src="/imags/job-post-icone-1.png" alt="John Doe" class="mr-3 ">
                             <div class="media-body text-left  text-align-center">
-                                <% jobList.forEach(function(job,i) { %>
+                              
                                 <h6><a href="#" class="font-color-black"><%= job.Jobtitle %></a>
                                 </h6>
                                 <i class="large material-icons">account_balance</i>
                                 <span class="text"><%= job.company %></span>
                                 <br />
                                 <i class="large material-icons">place</i>
-                                <span class="text font-size"><%= job.Location %></span>
+                                <span class="text font-size"><%= job.location %></span>
                                 <div class="float-right margin-top text-align-center">
                                     <a href="#" class="part-full-time">Part Time</a>
-                                    <p class="date-time">Deadline: May 23, 2018</p>
+                                    <p class="date-time">Deadline: Dec 23, 2020</p>
                                 </div>
-                                <%})%>
+                               
                             </div>
                         </div>
+                        <%})%>
                     </div>
+                   
 
 
 
