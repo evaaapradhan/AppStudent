@@ -1,140 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-<meta charset="utf-8">
-<meta name="author" content="studentapp_team">
-<meta name="description" content="Find job for students">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Padhai2Paisa</title>
-<link rel = "icon" href = "logoRS2.png" type = "image/x-icon"> 
-
-<script src="cdn-cgi/apps/head/4n2NXumNjtg5LPp6VXLlDicTUfA.js"></script><link rel="apple-touch-icon" href="images/apple-touch-icon.html">
-<link rel="shortcut icon" type="image/ico" href="images/favicon.html" />
-
-<link rel="stylesheet" href="css/bootstrap.min.css">
-
-<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-<link href="css/matrialize.css" rel="stylesheet">
-
-<link href="owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<header class="header">
-
-<div class="top_bar background-color-orange" style="background-color: #007C94;">
-<div class="top_bar_container">
-<div class="container">
-<div class="row">
-<div class="col">
-<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
-<ul class="top_bar_contact_list">
-<li>
-<i class="fa fa-phone coll" aria-hidden="true"></i>
-<div class="contact-no">0123 4567 8912</div>
-</li>
-<li>
-<i class="fa fa-envelope coll" aria-hidden="true"></i>
-<div class="email">studentapp@gmail.com</div> 
-</li>
-</ul>
-<div class=" ml-auto ">
-
-<div class="hamburger menu_mm  search_button transparent search display"><i class="large material-icons font-color-white  search-icone  menu_mm ">menu</i></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="header_container background-color-orange-light" style="background-color: #0096AF;"> 
-<div class="container">
-<div class="row">
-<div class="col">
-<div class="header_content d-flex flex-row align-items-center justify-content-start">
-<div class="logo_container">
-<a href="index-2.html">
-<img src="logoRS2.png" class="logo-text" alt="graduate cap with rupees on top" style="height: 65px; width: 70px;">
-</a>
-</div>
-<nav class="main_nav_contaner ml-auto">
-<ul class="main_nav">
-<li>
-<a href="index-2.html">Home</a>
-</li>
-<li class="dropdown ">
-<a class="dropdown-toggle" data-toggle="dropdown" href="#">Job
-<span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="job_category.html">Job List</a></li>
-<li><a href="job_detail.html">Job Detail</a></li>
-</ul>
-</li>
-<li><a href="blog_page.html"> Blog</a></li>
-<li><a href="about_us.html">About</a></li>
-<li><a href="/jobs/register">Register</a></li>
-</ul>
-<div class="Post-Jobs">      
-  <!-- post jobs class linked cha css kk ma ma tei vayera tei vayera tension yo  -->
-<a href="/jobs/postjobs" class="">
-Post Jobs
-</a>
-</div>
-<div class="hamburger menu_mm menu-vertical">
-<i class="large material-icons font-color-white menu_mm menu-vertical">menu</i>
-</div>
-</nav>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
-<div class="menu_close_container">
-<div class="menu_close">
-<div></div>
-<div></div>
-</div>
-</div>
-<div class="search">
-<form action="#" class="header_search_form menu_mm">
-<input type="search" class="search_input menu_mm" placeholder="Search" required="required">
-<button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
-<i class="fa fa-search menu_mm" aria-hidden="true"></i>
-</button>
-</form>
-</div>
-<nav class="menu_nav">
-<ul class="menu_mm">
-<li class="menu_mm">
-<a href="index-2.html">Home</a>
-</ul>
-</li>
-<li class="dropdown menu_mm">
-<a class="dropdown-toggle menu_mm" data-toggle="dropdown" href="#">Job
-<span class="caret"></span></a>
-<ul class="dropdown-menu menu_mm">
-<li class="menu_mm" ><a href="job_category.html">Job List</a></li>
-<li class="menu_mm"><a href="job_detail.html">Job Detail</a></li>
-</ul>
-</li>
-<li class="menu_mm"><a href="blog_page.html">Blog</a></li>
-<li class="menu_mm"><a href="about_us.html">About</a></li>
-<li class="menu_mm"><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
+    <%- include header.ejs %>
 
 
 <section id="intro">
@@ -142,7 +8,7 @@ Post Jobs
 <div class="carousel-background"></div>
 <div class="carousel-container">
 	<video autoplay muted loop id="myVideo" poster="bg-video.jpg" style="z-index: -1; position: absolute; height: 850px; overflow: hidden;">
-    <source src="bg-video.mp4" type="video/mp4">
+    <source src="/images/bg-video.mp4" type="video/mp4">
     </video>
 <div class="carousel-content">
 <h2 class="font-color-white">Find Jobs Now more Easy Way</h2>
@@ -232,77 +98,77 @@ Post Jobs
 <div class="col-lg-8 col-md-12">
 <div class="detail width-100 ">
 <div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-1.png" alt="John Doe" class="mr-3 ">
+<img src="/imags/job-post-icone-1.png" alt="John Doe" class="mr-3 ">
 <div class="media-body text-left  text-align-center">
-<h6><a href="#" class="font-color-black">Jopitar looking for a senior UX Designer</a></h6>
+<h6><a href="#" class="font-color-black">Jopitar looking for an intern in Node.js</a></h6>
 <i class="large material-icons">account_balance</i>
 <span class="text">Jopitar inc.</span>
 <br />
 <i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<span class="text font-size">Dhapasi Height</span>
 <div class="float-right margin-top text-align-center">
-<a href="#" class="part-full-time">Part Tiatton</a>
-<p class="date-time">Deadline: May 23, 2018</p>
+<a href="#" class="part-full-time">Part Time</a>
+<p class="date-time">Deadline: May 2, 2021</p>
 </div>
 </div>
 </div>
 </div>
 <div class="detail width-100">
 <div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-2.png" alt="John Doe" class="mr-3 ">
+<img src="/imags/job-post-icone-2.png" alt="John Doe" class="mr-3 ">
 <div class="media-body text-left text-align-center">
 <h6><a href="#" class="font-color-black">Rokital needs Marketing Experts</a></h6>
 <i class="large material-icons">account_balance</i>
 <span class="text">Rokitar ltd.</span>
 <br />
 <i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<span class="text font-size">Singha Durbar</span>
 <div class="float-right margin-top text-align-center">
 <a href="#" class="part-full-time">Full Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
+<p class="date-time">Deadline: May 23, 2021</p>
 </div>
 </div>
 </div>
 </div>
 <div class="detail width-100">
 <div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-3.png" alt="John Doe" class="mr-3 ">
+<img src="/imags/job-post-icone-3.png" alt="John Doe" class="mr-3 ">
 <div class="media-body text-left text-align-center">
 <h6><a href="#" class="font-color-black">Mshape looking for a senior UX Designer</a></h6>
 <i class="large material-icons">account_balance</i>
 <span class="text">Mshape inc.</span>
 <br />
 <i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<span class="text font-size">Putalisadak</span>
 <div class="float-right margin-top text-align-center">
 <a href="#" class="part-full-time">Full Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
+<p class="date-time">Deadline: Jan 23, 2021</p>
 </div>
 </div>
 </div>
 </div>
 <div class="detail width-100">
 <div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-4.png" alt="John Doe" class="mr-3 ">
+<img src="/imags/job-post-icone-4.png" alt="John Doe" class="mr-3 ">
 <div class="media-body text-left text-align-center">
-<h6><a href="#" class="font-color-black">Marketing Directer needed </a></h6>
+<h6><a href="#" class="font-color-black">Transcriber needed </a></h6>
 <i class="large material-icons">account_balance</i>
 <span class="text">Scalegoss ltd.</span>
 <br />
 <i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<span class="text font-size">Lalitpur, Manbhawan</span>
 <div class="float-right margin-top text-align-center">
 <a href="#" class="part-full-time">Part Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
+<p class="date-time">Deadline: Nov 23, 2020</p>
 </div>
 </div>
 </div>
 </div>
 <div class="detail width-100">
 <div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-5.png" alt="John Doe" class="mr-3 ">
+<img src="/imags/job-post-icone-5.png" alt="John Doe" class="mr-3 ">
 <div class="media-body text-left text-align-center">
-<h6><a href="#" class="font-color-black">We need a senior Brand Designer</a></h6>
+<h6><a href="#" class="font-color-black">We need a  Brand Designer</a></h6>
 <i class="large material-icons">account_balance</i>
 <span class="text">Supwin inc.</span>
 <br />
@@ -310,96 +176,30 @@ Post Jobs
 <span class="text font-size">11907 Doyle Cape Cydneyview</span>
 <div class="float-right margin-top text-align-center">
 <a href="#" class="part-full-time">Freelance</a>
-<p class="date-time">Deadline: May 23, 2018</p>
+<p class="date-time">Deadline: May 23, 2021</p>
 </div>
 </div>
 </div>
 </div>
+<% jobList.forEach(function(job,i) { %>
 <div class="detail width-100">
 <div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-1.png" alt="John Doe" class="mr-3 ">
+<img src="/imags/job-post-icone-1.png" alt="John Doe" class="mr-3 ">
 <div class="media-body text-left  text-align-center">
-<h6><a href="#" class="font-color-black">Jopitar looking for a senior UX Designer</a></h6>
+<h6><a href="#" class="font-color-black"><%= job.description %></a></h6>
 <i class="large material-icons">account_balance</i>
- <span class="text">Jopitar inc.</span>
+ <span class="text"><%= job.Jobtitle %></span>
 <br />
 <i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
+<span class="text font-size"><%= job.location %></span>
 <div class="float-right margin-top text-align-center">
 <a href="#" class="part-full-time">Part Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
+<p class="date-time">Deadline: DEC 23, 2020</p>
 </div>
 </div>
 </div>
 </div>
-<div class="detail width-100">
-<div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-2.png" alt="John Doe" class="mr-3 ">
-<div class="media-body text-left text-align-center">
-<h6><a href="#" class="font-color-black">Rokital needs Marketing Experts</a></h6>
-<i class="large material-icons">account_balance</i>
-<span class="text">Rokitar ltd.</span>
-<br />
-<i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
-<div class="float-right margin-top text-align-center">
-<a href="#" class="part-full-time">Full Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
-</div>
-</div>
-</div>
-</div>
-<div class="detail width-100">
-<div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-3.png" alt="John Doe" class="mr-3 ">
-<div class="media-body text-left text-align-center">
-<h6><a href="#" class="font-color-black">Mshape looking for a senior UX Designer</a></h6>
-<i class="large material-icons">account_balance</i>
-<span class="text">Mshape inc.</span>
-<br />
-<i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
-<div class="float-right margin-top text-align-center">
-<a href="#" class="part-full-time">Full Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
-</div>
-</div>
-</div>
-</div>
-<div class="detail width-100">
-<div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-4.png" alt="John Doe" class="mr-3 ">
-<div class="media-body text-left text-align-center">
-<h6><a href="#" class="font-color-black">Marketing Directer needed</a></h6>
-<i class="large material-icons">account_balance</i>
-<span class="text">Scalegoss ltd.</span>
-<br />
-<i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
-<div class="float-right margin-top text-align-center">
-<a href="#" class="part-full-time">Part Time</a>
-<p class="date-time">Deadline: May 23, 2018</p>
-</div>
-</div>
-</div>
-</div>
-<div class="detail width-100">
-<div class="media display-inline text-align-center">
-<img src="imags/job-post-icone-5.png" alt="John Doe" class="mr-3 ">
-<div class="media-body text-left text-align-center">
-<h6><a href="#" class="font-color-black">We need a senior Brand Designer</a></h6>
-<i class="large material-icons">account_balance</i>
-<span class="text">Supwin inc.</span>
-<br />
-<i class="large material-icons">place</i>
-<span class="text font-size">11907 Doyle Cape Cydneyview</span>
-<div class="float-right margin-top text-align-center">
-<a href="#" class="part-full-time">Freelance</a>
-<p class="date-time">Deadline: May 23, 2018</p>
-</div>
-</div>
-</div>
-</div>
+<%})%>
 <div class="vertical-space-20"></div>
 <div class="vertical-space-25"></div>
 <div class="job-list width-100">
@@ -422,49 +222,8 @@ Post Jobs
 
 
 
-<footer id="footer" class="background-color-white">
-<div class="container">
-<div class="vertical-space-100"></div>
-<div class="row">
-<div class="col-lg-4 col-md-6 vertical-space-2">
-<h5>About Us</h5>
-<p class="paregraf"> Are you a student trying to find an internship or get started with a part-time job meanwhile you study? We are providing you the perfect platform to get job listings from companies looking to hire young professionals like <u> you</u>.</p>
-<a href="#">
-<i class="fa fa-facebook social-icon"></i></a>
-<a href="#">
-<i class="fa fa-twitter social-icon"></i></a>
-<a href="#">
-<i class="fa fa-map-marker social-icon"></i></a>
-</div>
-<div class="col-lg-2 col-md-6 vertical-space-2">
-<h5>See More</h5>
-<div class="text">
-<a href="#">About Us</a>
-<a href="#">Contact</a>
-<a href="#">Terms</a>
-<a href="#">Privacy</a>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 vertical-space-2">
-<h5>Follow Us</h5>
-<p>Get latest blogs and newsletter</p>
-<div class="vertical-space-30"></div>
-<form>
-<input type="email" class="email " placeholder="Email Address " required="">
-<span class="fa fa-envelope email-icone "></span>
-<input type="submit" class="Subscribe" value="Subscribe" style="background-color:#0096AF;">
-</form>
-</div>
-</div>
-<div class="vertical-space-60"></div>
-</div>
-<div class="container-fluid background-color-orange main-footer" style="background-color:#0096AF; ">
-<div class="container text-center">
-<div class="vertical-space-30"></div>
-<p><a target="_blank" style="color: white; font-size: 15px;">2020 Copyright &copy; studentapp_team </a></p>
-</div>
-</div>
-</footer>
+
+<%- include footer.ejs %>
 
 
 <div class="modal" id="myModal">
@@ -476,7 +235,7 @@ Post Jobs
 <div class="modal-body">
 <button class="button button-rounded  close" data-dismiss="modal">&times;</button>
 <video class="" controls>
-<source src="video/Pexels_Videos_2706.mp4" type="video/mp4">
+<source src="/video/Pexels_Videos_2706.mp4" type="video/mp4">
 </video>
 </div>
 </div>
@@ -485,12 +244,12 @@ Post Jobs
 </div>
 
 
-<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="owlcarousel/owl.carousel.min.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/owlcarousel/owl.carousel.min.js"></script>
 
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="/js/jquery-ui.min.js"></script>
+<script src="/js/custom.js"></script>
 </body>
 
 
