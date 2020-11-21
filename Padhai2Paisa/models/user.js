@@ -6,6 +6,8 @@ const JobSchema = mongoose.Schema(
         company: String,
         description: String,
         location:String,
+        jobtype: String,
+        deadline: String,
         createAt: {
             type:Date,
             default: Date.now()
